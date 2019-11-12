@@ -87,6 +87,11 @@ body.view-light::-webkit-scrollbar-thumb:hover {
     padding: 0 21px;
     width: 33.3333%;
 }
+.col-x-12{
+    float: left;
+    padding: 0 21px;
+    width: 100%;
+}
 .row-pc{
     margin: 0 -7px;
 }
@@ -293,8 +298,8 @@ ul.colum-custom >li{
     float: left;
     padding: 0 7px;
     width: 25%;
-    height: 50px;
-    line-height: 50px;
+    padding-top: 17px;
+    padding-bottom: 17px;
 }
 ul.colum-custom >li:first-child{
     text-align: center;
@@ -333,6 +338,67 @@ ul.colum-custom.bg-cl-vi >li{
 }
 .data-bottom {
     margin-bottom: 32px;
+}
+
+/*style uncomplete auction*/
+.notification-status img {
+    padding-top: 62px;
+    padding-bottom: 27px;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+.txt-noti-status {
+    text-align: center;
+    font-style: italic;
+    padding-bottom: 83px;
+}
+.notification-status img.icon-not-complete-light{
+    display: none;
+}
+
+ul.list-code-join >li{
+    border-bottom: 1px solid #2d353a;
+}
+ul.list-code-child li{
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+ul.list-code-join >li:first-child{
+    background: #7c7cd1;
+}
+ul.list-code-child:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+ul.list-code-join >li:last-child{
+    border-bottom: none;
+}
+.list-code-wrap {
+    margin-bottom: 30px;
+}
+ul.list-code-join >li ul.list-code-child >li{
+
+}
+ul.list-code-join >li ul.list-code-child li:first-child{
+    float: left;
+    width: 20%;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+ul.list-code-join >li ul.list-code-child li:nth-child(2){
+    float: left;
+    width: 20%;
+    padding-left: 11px;
+    padding-right: 11px;
+}
+ul.list-code-join >li ul.list-code-child li:last-child{
+    float: left;
+    width: 60%;
+    padding-left: 11px;
+    padding-right: 11px;
 }
 
 /*style button set bg*/
@@ -425,6 +491,7 @@ button.cogs:hover img{
     border-radius: 3px;
     margin: auto;
 }
+
 #body-view.view-light,.view-light .main{
     background: #EFEFEF;
 }
@@ -507,6 +574,16 @@ button.cogs:hover img{
     box-shadow: 0 0 3px 1px #ddd;
     -webkit-box-shadow: 0 0 3px 1px #ddd;
 }
+
+.view-light .notification-status{
+    color: #2828b2;
+}
+.view-light .notification-status img.icon-not-complete-light{
+    display: block;
+}
+.view-light .notification-status img.icon-not-complete-dark{
+    display: none;
+}
 /*style mobile*/
 @media (max-width: 1600px) {
     .bg-main {
@@ -531,6 +608,9 @@ button.cogs:hover img{
     }
     .data-bottom .bg-main {
         padding: 21px 28px 18px;
+    }
+    .notification-status img{
+        padding-top: 92px;
     }
 }
 @media (max-width: 1300px){
@@ -557,6 +637,13 @@ button.cogs:hover img{
     }
     .number-price-plus {
         height: auto;
+    }
+    .notification-status img {
+        padding-top: 15px;
+        padding-bottom: 20px;
+    }
+    .txt-noti-status {
+        padding-bottom: 20px;
     }
 }
 @media (max-width: 991px) {
@@ -635,6 +722,10 @@ button.cogs:hover img{
     .bg-main {
         margin-bottom: 14px;
     }
+
+    ul.list-code-join >li ul.list-code-child li:first-child,ul.list-code-join >li ul.list-code-child li:nth-child(2),ul.list-code-join >li ul.list-code-child li:last-child{
+        width: 33.3333%;
+    }
 }
 @media (max-width: 500px) {
     .logo h1 a svg {
@@ -708,8 +799,8 @@ button.cogs:hover img{
         margin-bottom: 20px;
     }
     ul.colum-custom >li {
-        height: 32px;
-        line-height: 32px;
+        padding-top: 12px;
+        padding-bottom: 12px;
     }
     .table-number-cp {
         margin-bottom: 20px;
@@ -717,139 +808,16 @@ button.cogs:hover img{
     .data-bottom .row-x .col-x-4:last-child .table-number-cp {
         margin-bottom: 6px;
     }
+    .txt-noti-status {
+        padding-bottom: 2px;
+    }
+
+
+    ul.list-code-child li{
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .list-code-wrap {
+        margin-bottom: 0;
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*@media (max-width: 1199px) {*/
-/*    ul.data-auction li span:first-child {*/
-/*        display: block;*/
-/*        margin-right: 0;*/
-/*        margin-bottom: 4px;*/
-/*    }*/
-/*    .number-info-bot .bg-main {*/
-/*        padding-left: 10px;*/
-/*        padding-right: 10px;*/
-/*    }*/
-/*    .title-enter-value {*/
-/*        margin-bottom: 10px;*/
-/*    }*/
-/*    .title-price-plus {*/
-/*        height: 28px;*/
-/*    }*/
-/*    .price-plus .number-price-plus:first-child {*/
-/*        height: 28px;*/
-/*    }*/
-
-/*}*/
-
-/*@media (max-width: 991px) {*/
-/*    .price-plus .number-price-plus:first-child {*/
-/*        height: auto;*/
-/*    }*/
-/*    .data-top .col-pc-6 {*/
-/*        width: 100%;*/
-/*    }*/
-/*    .title-price-plus {*/
-/*        height: auto;*/
-/*    }*/
-/*    .data-bottom .bg-main {*/
-/*        padding-left: 15px;*/
-/*        padding-right: 15px;*/
-/*    }*/
-/*    .title-top-price-tallest {*/
-/*        height: 28px;*/
-/*    }*/
-/*}*/
-/*@media (max-width: 767px) {*/
-/*    .logo h1{*/
-/*        padding: 15px 0;*/
-/*    }*/
-/*    .title-page {*/
-/*        padding-bottom: 20px;*/
-/*    }*/
-/*    .bg-main {*/
-/*        padding-left: 7px;*/
-/*        padding-right: 7px;*/
-/*    }*/
-/*    ul.data-auction >li:last-child span:first-child {*/
-/*        height: 28px;*/
-/*    }*/
-/*    .data-bottom .col-x-4 {*/
-/*        width: 100%;*/
-/*        padding: 0 7px;*/
-/*    }*/
-/*    .title-top-price-tallest {*/
-/*        height: auto;*/
-/*    }*/
-/*    .table-number-cp {*/
-/*        margin-bottom: 20px;*/
-/*    }*/
-/*    .data-bottom {*/
-/*        padding-bottom: 3px;*/
-/*    }*/
-/*    .change-bg-screen{*/
-/*        top: 15px;*/
-/*    }*/
-/*}*/
-/*@media (max-width: 600px) and (min-width: 501px) {*/
-/*    .price-plus .number-price-plus:first-child {*/
-/*        height: 28px;*/
-/*    }*/
-/*}*/
-/*@media (max-width: 500px) {*/
-/*    .logo,.txt-wellcom-page,.title-page{*/
-/*        text-align: center;*/
-/*    }*/
-/*    h2.title-page {*/
-/*        font-size: 15px;*/
-/*    }*/
-/*    .title-name-company {*/
-/*        line-height: 24px;*/
-/*    }*/
-/*    .number-info-block .col-pc-3 {*/
-/*        width: 100%;*/
-/*        margin-bottom: 10px;*/
-/*    }*/
-/*    .number-info-bot .col-pc-4 {*/
-/*        width: 100%;*/
-/*    }*/
-/*    ul.data-auction >li:last-child span:first-child {*/
-/*        height: auto;*/
-/*    }*/
-/*    .auction-price .col-pc-4 {*/
-/*        width: 100%;*/
-/*        margin-bottom: 10px;*/
-/*        padding: 0;*/
-/*    }*/
-/*    .price-plus {*/
-/*        margin-top: 10px;*/
-/*    }*/
-/*    .title-price-plus {*/
-/*        height: 28px;*/
-/*    }*/
-/*    .price-plus .col-pc-4,.price-plus .col-pc-8,.enter-value-plus .col-pc-4,.enter-value-plus .col-pc-8 {*/
-/*        width: 50%;*/
-/*    }*/
-/*    .price-plus .col-pc-8 .number-price-plus:first-child{*/
-/*        height: 28px;*/
-/*    }*/
-/*    .enter-value-plus {*/
-/*        margin-top: 10px;*/
-/*    }*/
-/*    .data-bottom .bg-main {*/
-/*        padding-bottom: 0;*/
-/*    }*/
-/*}*/
