@@ -73,7 +73,7 @@ body.view-light::-webkit-scrollbar-thumb:hover {
 }
 
 .container{
-    max-width: 1782px;
+    max-width: 1774px;
     width: 100%;
     padding: 0 11px;
     margin: 0 auto;
@@ -88,11 +88,11 @@ body.view-light::-webkit-scrollbar-thumb:hover {
     width: 33.3333%;
 }
 .row-pc{
-    margin: 0 -11px;
+    margin: 0 -7px;
 }
 .col-pc-3,.col-pc-4,.col-pc-6,.col-pc-8,.col-pc-9{
     float: left;
-    padding: 0 11px;
+    padding: 0 7px;
 }
 .col-pc-6{
     width: 50%;
@@ -118,13 +118,13 @@ body.view-light::-webkit-scrollbar-thumb:hover {
 .cl-vi{
     color: #ba79a3;
 }
-#wrapper{
-    height: 100vh;
-}
+/*#wrapper{*/
+/*    height: 100vh;*/
+/*}*/
 
 .logo h1{
     margin: 0;
-    padding: 54px 0 37px;
+    padding: 32px 0 17px;
 }
 .logo h1 a svg:last-child{
     display: none;
@@ -139,7 +139,7 @@ body.view-light::-webkit-scrollbar-thumb:hover {
     font-size: 27px;
     text-transform: uppercase;
     margin-bottom: 0;
-    padding-bottom: 57px;
+    padding-bottom: 32px;
     color: #fff;
     margin-top: 0;
 }
@@ -148,7 +148,7 @@ body.view-light::-webkit-scrollbar-thumb:hover {
     background: #262D33;
     border-radius: 6px;
     -webkit-border-radius: 6px;
-    margin-bottom: 22px;
+    margin-bottom: 14px;
 }
 .bg-main:after,.row-pc:after,.row-x:after{
     content: '';
@@ -255,8 +255,8 @@ ul.data-auction li span:last-child {
     margin-bottom: 11px;
 }
 .enter-value-plus {
-    margin-top: 18px;
-    padding-top: 15px;
+    margin-top: 13px;
+    padding-top: 12px;
     border-top: 1px solid #323B3F;
 }
 .number-command{
@@ -267,7 +267,7 @@ ul.data-auction li span:last-child {
 /*begin data-bottom*/
 
 .data-bottom .bg-main{
-    padding: 32px 46px 44px;
+    padding: 28px 46px 0;
 }
 .title-top-price-tallest{
     margin-bottom: 23px;
@@ -329,10 +329,10 @@ ul.colum-custom.bg-cl-vi >li{
     background: #BA79A3;
 }
 .table-number-cp {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 .data-bottom {
-    margin-bottom: 50px;
+    margin-bottom: 32px;
 }
 
 /*style button set bg*/
@@ -633,7 +633,7 @@ button.cogs:hover img{
         display: table;
     }
     .bg-main {
-        margin-bottom: 20px;
+        margin-bottom: 14px;
     }
 }
 @media (max-width: 500px) {
@@ -677,9 +677,6 @@ button.cogs:hover img{
     }
     ul.data-auction li span:first-child {
         margin-bottom: 5px;
-    }
-    .bg-main {
-        margin-bottom: 15px;
     }
     .bg-change-gr .title-level-price, .bg-change-og .title-level-price, .bg-change-vi .title-level-price {
         margin-bottom: 5px;
