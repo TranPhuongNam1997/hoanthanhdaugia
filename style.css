@@ -134,6 +134,9 @@ body.view-light::-webkit-scrollbar-thumb:hover {
 .logo h1 a svg:last-child{
     display: none;
 }
+.logo h1 a{
+    display: inline-block;
+}
 .txt-wellcom-page{
     color: #7ca3b5;
     margin-bottom: 10px;
